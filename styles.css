@@ -1,0 +1,52 @@
+.flag {
+  height: 500px;
+}
+
+.pride > .band {
+  height: 16.66%;
+}
+
+.flag.pride > .band:nth-child(1) {
+  background-color: #e50001;
+}
+.flag.pride > .band:nth-child(2) {
+  background-color: #ff8d01;
+}
+.flag.pride > .band:nth-child(3) {
+  background-color: #ffee02;
+}
+.flag.pride > .band:nth-child(4) {
+  background-color: #018121;
+}
+.flag.pride > .band:nth-child(5) {
+  background-color: #004cff;
+}
+.flag.pride > .band:nth-child(6) {
+  background-color: #750288;
+}
+
+.coop > .band {
+  height: 14.2857%;
+}
+
+.flag.coop > .band:nth-child(1) {
+  background-color: #ff0001;
+}
+.flag.coop > .band:nth-child(2) {
+  background-color: #ff6301;
+}
+.flag.coop > .band:nth-child(3) {
+  background-color: #ffff03;
+}
+.flag.coop > .band:nth-child(4) {
+  background-color: #018001;
+}
+.flag.coop > .band:nth-child(5) {
+  background-color: #0007ff;
+}
+.flag.coop > .band:nth-child(6) {
+  background-color: #4b0182;
+}
+.flag.coop > .band:nth-child(7) {
+  background-color: #bc32ff;
+}

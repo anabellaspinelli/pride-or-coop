@@ -1,5 +1,56 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Arvo', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 1em;
+}
+
 .flag {
-  height: 500px;
+  height: 300px;
+}
+
+.flag-details {
+  font-size: 1.2em;
+  padding-left: 20px;
+}
+
+section#pride, section#coop {
+  padding: 2%;
+}
+
+section#pride {
+  float: left;
+  min-width: 46%;
+}
+
+section#coop {
+  float: right;
+  min-width: 46%;
+}
+
+/*smaller*/
+@media (max-width: 1037px) { 
+  .flag {
+    height: 150px;
+  }
+
+  section#pride {
+    min-width: 96%;
+    float: none;
+  }
+  
+  section#coop {
+    min-width: 96%;
+    float: none;
+  }
+
 }
 
 .pride > .band {
@@ -30,23 +81,32 @@
 }
 
 .flag.coop > .band:nth-child(1) {
-  background-color: #ff0001;
+  background-color: #f00;
 }
 .flag.coop > .band:nth-child(2) {
-  background-color: #ff6301;
+  background-color: #f60;
 }
 .flag.coop > .band:nth-child(3) {
-  background-color: #ffff03;
+  background-color: #ff0;
 }
 .flag.coop > .band:nth-child(4) {
-  background-color: #018001;
+  background-color: #0c0;
 }
 .flag.coop > .band:nth-child(5) {
-  background-color: #0007ff;
+  background-color: #3cf;
 }
 .flag.coop > .band:nth-child(6) {
-  background-color: #4b0182;
+  background-color: #00c;
 }
 .flag.coop > .band:nth-child(7) {
-  background-color: #bc32ff;
+  background-color: #609;
+}
+
+#disclaimer {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+a {
+  color: #000;
 }

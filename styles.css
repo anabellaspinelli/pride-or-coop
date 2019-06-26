@@ -2,6 +2,7 @@ html,
 body {
   font-family: "Roboto", sans-serif;
   height: 100%;
+  background-color: #fffffa;
 }
 
 body {
@@ -30,8 +31,52 @@ h1 {
   line-height: 1em;
 }
 
+a {
+  color: #000;
+}
+
 .flag {
   height: 300px;
+}
+
+.flag.pride {
+  background: rgb(229, 0, 1);
+  background: linear-gradient(
+    180deg,
+    rgba(229, 0, 1, 1) 0%,
+    rgba(229, 0, 1, 1) 16.6%,
+    rgba(255, 141, 1, 1) 16.6%,
+    rgba(255, 141, 1, 1) 33.2%,
+    rgba(255, 238, 2, 1) 33.2%,
+    rgba(255, 238, 2, 1) 49.8%,
+    rgba(1, 129, 33, 1) 49.8%,
+    rgba(1, 129, 33, 1) 66.4%,
+    rgba(0, 76, 255, 1) 66.4%,
+    rgba(0, 76, 255, 1) 83%,
+    rgba(117, 2, 136, 1) 83%,
+    rgba(117, 2, 136, 1) 100%
+  );
+}
+
+.flag.coop {
+  background: rgb(255, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 0, 0, 1) 14.2857%,
+    rgba(255, 102, 0, 1) 14.2857%,
+    rgba(255, 102, 0, 1) 28.5714%,
+    rgba(255, 255, 0, 1) 28.5714%,
+    rgba(255, 255, 0, 1) 42.8571%,
+    rgba(0, 204, 0, 1) 42.8571%,
+    rgba(0, 204, 0, 1) 57.1428%,
+    rgba(51, 204, 255, 1) 57.1428%,
+    rgba(51, 204, 255, 1) 71.4285%,
+    rgba(0, 0, 204, 1) 71.4285%,
+    rgba(0, 0, 204, 1) 85.7142%,
+    rgba(102, 0, 153, 1) 85.7142%,
+    rgba(102, 0, 153, 1) 100%
+  );
 }
 
 .flag-details {
@@ -42,16 +87,15 @@ h1 {
 section#pride,
 section#coop {
   padding: 2%;
+  min-width: 46%;
 }
 
 section#pride {
   float: left;
-  min-width: 46%;
 }
 
 section#coop {
   float: right;
-  min-width: 46%;
 }
 
 /*smaller*/
@@ -60,81 +104,29 @@ section#coop {
     height: 150px;
   }
 
-  section#pride {
-    min-width: 96%;
-    float: none;
-  }
-
+  section#pride,
   section#coop {
     min-width: 96%;
     float: none;
   }
 }
 
-.pride > .band {
-  height: 16.66%;
-}
-
-.flag.pride > .band:nth-child(1) {
-  background-color: #e50001;
-}
-.flag.pride > .band:nth-child(2) {
-  background-color: #ff8d01;
-}
-.flag.pride > .band:nth-child(3) {
-  background-color: #ffee02;
-}
-.flag.pride > .band:nth-child(4) {
-  background-color: #018121;
-}
-.flag.pride > .band:nth-child(5) {
-  background-color: #004cff;
-}
-.flag.pride > .band:nth-child(6) {
-  background-color: #750288;
-}
-
-.coop > .band {
-  height: 14.2857%;
-}
-
-.flag.coop > .band:nth-child(1) {
-  background-color: #f00;
-}
-.flag.coop > .band:nth-child(2) {
-  background-color: #f60;
-}
-.flag.coop > .band:nth-child(3) {
-  background-color: #ff0;
-}
-.flag.coop > .band:nth-child(4) {
-  background-color: #0c0;
-}
-.flag.coop > .band:nth-child(5) {
-  background-color: #3cf;
-}
-.flag.coop > .band:nth-child(6) {
-  background-color: #00c;
-}
-.flag.coop > .band:nth-child(7) {
-  background-color: #609;
-}
-
-#disclaimer,
-.footer .made {
-  text-align: center;
+section.disclaimer {
   font-size: 0.8em;
+  text-align: center;
 }
 
-a {
-  color: #000;
-}
-
-.footer {
+footer {
   flex-shrink: 0;
   background-color: #ffc;
 }
 
-.footer p {
+footer p {
   margin: 10px 0;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+footer span {
+  margin-left: 20px;
 }

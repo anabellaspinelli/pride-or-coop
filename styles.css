@@ -1,13 +1,14 @@
 html,
 body {
   font-family: "Roboto", sans-serif;
-  height: 100%;
   background-color: #fffffa;
+  height: 100%;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .content {
